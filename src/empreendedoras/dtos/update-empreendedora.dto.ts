@@ -18,7 +18,10 @@ export class UpdateEmpreendedoraDto extends PartialType(
   endereco?: string;
   
   @IsString()
-  cidade: string;
+  cidade?: string;
+
+  @IsString()
+  estado?: string;
 
   @IsString()
   telefone?: string;

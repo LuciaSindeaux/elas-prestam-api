@@ -10,5 +10,5 @@ export class Servico {
     descricao: string;
 
     @ManyToOne(() => Empreendedora, empreendedora => empreendedora.servicosPrestados, { nullable: true })
-    Empreendedora: Empreendedora;
+    Empreendedora?: Empreendedora;
 }

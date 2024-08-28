@@ -18,6 +18,9 @@ export class Empreendedora {
     cidade:string;
 
     @Column()
+    estado:string;
+
+    @Column()
     telefone:string;
 
     @OneToMany(() => Servico, (servico) => servico.Empreendedora, {eager: true})

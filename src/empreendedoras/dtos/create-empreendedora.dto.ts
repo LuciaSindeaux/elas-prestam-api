@@ -18,6 +18,9 @@ export class CreateEmpreendedoraDto {
   cidade: string;
 
   @IsString()
+  estado: string;
+
+  @IsString()
   telefone: string;
 
   @IsArray()
