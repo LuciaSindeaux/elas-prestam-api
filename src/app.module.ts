@@ -11,11 +11,11 @@ require('dotenv').config();
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST,
-      port: parseInt(process.env.DB_PORT),
-      username: process.env.DB_USERNAME,
-      password: String (process.env.DB_PASSWORD),
-      database: process.env.DB_DATABASE,
+      host: process.env.PGHOST,
+      port: parseInt(process.env.PGPORT),
+      username: process.env.PGUSER,
+      password: String (process.env.PGPASSWORD),
+      database: process.env.PGDATABASE,
       entities: [Empreendedora, Servico],
       synchronize: true,
     }),
